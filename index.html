@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reshafebin M.C | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    transition:0.4s;
+}
+
+header{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    padding:20px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:15px 0;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:white;
+    color:#4f46e5;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#4f46e5;
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project img{
+    width:100%;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    background:#4f46e5;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:12px;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.dark{
+    background:#111827;
+    color:white;
+}
+
+.dark .card,
+.dark .project{
+    background:#1f2937;
+    color:white;
+}
+
+#darkBtn{
+    background:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Reshafebin M.C</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button id="darkBtn">🌙</button>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<img src="https://via.placeholder.com/180" alt="Profile">
+<h1>Hi, I'm Reshafebin M.C</h1>
+<p>B.Sc Physics Graduate</p>
+<p>Passionate about Physics, Technology, Artificial Intelligence and Web Development.</p>
+<a href="#contact" class="btn">Contact Me</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I am Reshafebin M.C, a B.Sc Physics graduate from PSMO College Tirurangadi.
+I am passionate about science, technology, artificial intelligence and web development.
+I enjoy learning new skills and creating useful digital solutions.
+</p>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<h3>B.Sc Physics</h3>
+<p>PSMO College Tirurangadi</p>
+<p>Graduated in 2025</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill">Physics</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">AI Tools</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Communication</div>
+<div class="skill">Critical Thinking</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="https://via.placeholder.com/300x200">
+<div class="project-content">
+<h3>Physics Research Project</h3>
+<p>Research-based academic project in Physics.</p>
+<a href="#">GitHub</a>
+</div>
+</div>
+
+<div class="project">
+<img src="https://via.placeholder.com/300x200">
+<div class="project-content">
+<h3>Portfolio Website</h3>
+<p>Responsive personal portfolio website.</p>
+<a href="#">GitHub</a>
+</div>
+</div>
+
+<div class="project">
+<img src="https://via.placeholder.com/300x200">
+<div class="project-content">
+<h3>AI Learning Assistant</h3>
+<p>AI-powered educational assistant concept.</p>
+<a href="#">GitHub</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<br>
+
+<div class="card">
+<p>Email: yourmail@example.com</p>
+<p>GitHub: github.com/reshafebin</p>
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<p>Location: Kerala, India</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Reshafebin M.C | All Rights Reserved</p>
+</footer>
+
+<script>
+const darkBtn = document.getElementById("darkBtn");
+
+darkBtn.addEventListener("click", () => {
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+darkBtn.innerHTML = "☀️";
+}else{
+darkBtn.innerHTML = "🌙";
+}
+});
+</script>
+
+</body>
+</html>
